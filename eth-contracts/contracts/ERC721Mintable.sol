@@ -528,7 +528,7 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
         return baseTokenURI;
     }
 
-    function tokenURI(uint256 tokenId) external view returns (string memory) {
+    function getTokenURI(uint256 tokenId) external view returns (string memory) {
         require(_exists(tokenId));
         return _tokenURIs[tokenId];
     }
@@ -554,7 +554,7 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
 
     contract ERC721RealEstateToken is ERC721Metadata("Next Gen Real Estate", "NGRE", "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/"){
 
-        function mint(address to, uint tokenId) public returns(bool){
+        function mint(address to, uint tokenId) public onlyOwner returns(bool){
             super._mint(to, tokenId);
             super.setTokenURI(tokenId);
             return true;
