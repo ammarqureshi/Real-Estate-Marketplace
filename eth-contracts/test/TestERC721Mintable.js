@@ -15,11 +15,11 @@ contract('TestERC721Mintable', accounts => {
         beforeEach(async function () {
 
             //initialise new mintable contract with first account address as owner
-            this.contract = await ERC721MintableComplete.new({from: account_one});
+            this.contract = await ERC721MintableComplete.new({ from: account_one });
 
             // TODO: mint multiple tokens
-            for(var i=1; i<=count; i++){
-                let result = await this.contract.mint(accounts[i], i, {from: account_one});
+            for (var i = 1; i <= count; i++) {
+                let result = await this.contract.mint(accounts[i], i, { from: account_one });
             }
 
 
@@ -33,7 +33,7 @@ contract('TestERC721Mintable', accounts => {
         })
 
         it('should get token balance of each address that holds token', async function () {
-            for(var i=1; i<=count; i++){
+            for (var i = 1; i <= count; i++) {
                 let returnedBalance = await this.contract.balanceOf(accounts[i]);
                 assert.equal(1, returnedBalance, `balance not equal to 1`);
             }
@@ -43,7 +43,7 @@ contract('TestERC721Mintable', accounts => {
         it('should return token uri', async function () {
 
             let baseURI = "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/";
-            for(var i=1; i<=count; i++){
+            for (var i = 1; i <= count; i++) {
                 let tokenURIReturned = await this.contract.getTokenURI(count);
                 let expectedTokenURI = baseURI + count;
 
@@ -52,23 +52,23 @@ contract('TestERC721Mintable', accounts => {
         })
 
         it('should transfer token from one owner to another', async function () {
-            await this.contract.transferOwnership(account_two, {from: account_one});
+            await this.contract.transferOwnership(account_two, { from: account_one });
             let newOwner = await this.contract.getOwner();
-             assert.equal(account_two, newOwner, `new owner should be ${newOwner}`);
+            assert.equal(account_two, newOwner, `new owner should be ${newOwner}`);
 
         })
     });
 
     describe('have ownership properties', function () {
         beforeEach(async function () {
-            this.contract = await ERC721MintableComplete.new({from: account_one});
+            this.contract = await ERC721MintableComplete.new({ from: account_one });
         })
 
         it('should fail when minting when address is not contract owner', async function () {
 
             let permissionDenied = false;
-            try{
-                await this.contract.mint(account_three, 1, {from: account_two});
+            try {
+                await this.contract.mint(account_three, 1, { from: account_two });
             }
             catch{
                 permissionDenied = true;
