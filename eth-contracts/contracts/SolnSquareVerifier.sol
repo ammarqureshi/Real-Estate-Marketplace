@@ -1,7 +1,9 @@
 pragma solidity >=0.4.21 <0.6.0;
 
 import "./ERC721Mintable.sol";
-import "./ZokratesVerifier.sol";
+// import "./ZokratesVerifier.sol";
+import "./verifier.sol";
+
 import "openzeppelin-solidity/contracts/utils/Address.sol";
 
 // TODO define a contract call to the zokrates generated solidity contract <Verifier> or <renamedVerifier>
@@ -56,5 +58,13 @@ contract SolnSquareVerifier is ERC721RealEstateToken {
         require(verifier.verifyTx(a, b, c, input), "Solution is not valid");
         addSolution(_to, _tokenId, key);
         super.mint(_to, _tokenId);
+    }
+
+    function doesUniqueSolutionExist(bytes32 key) public view returns(bool){
+        return uniqueSolutions[key].to != address(0);
+    }
+
+   function generateKey(uint[2] memory a, uint[2][2] memory b, uint[2] memory c, uint[2] memory input) public view returns(bytes32){
+        return keccak256(abi.encodePacked(a, b, c, input));
     }
 }
