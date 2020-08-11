@@ -8,11 +8,11 @@ The capstone will build upon the knowledge you have gained in the course in orde
 ![deployment-2](https://user-images.githubusercontent.com/17296281/89957941-9f74e300-dc30-11ea-88e2-48e7d12780c9.png)
 
 
- *Migrations: 0xfEc45188e047ddDB636251eE90fd569F9E0e831A
+ * Migrations: 0xfEc45188e047ddDB636251eE90fd569F9E0e831A
  
- *Verifier: 0x1Ddc471B7715cF2690bba037A0c4EB3Af28956C9: https://rinkeby.etherscan.io/address/0x1ddc471b7715cf2690bba037a0c4eb3af28956c9
+ * Verifier: 0x1Ddc471B7715cF2690bba037A0c4EB3Af28956C9: https://rinkeby.etherscan.io/address/0x1ddc471b7715cf2690bba037a0c4eb3af28956c9
  
- *SolnSquareVerifier: 0x032996348838aAf3b4Df4fB79a09acB0a4427d56: https://rinkeby.etherscan.io/address/0x032996348838aAf3b4Df4fB79a09acB0a4427d56
+ * SolnSquareVerifier: 0x032996348838aAf3b4Df4fB79a09acB0a4427d56: https://rinkeby.etherscan.io/address/0x032996348838aAf3b4Df4fB79a09acB0a4427d56
  
 # Project Resources
 
