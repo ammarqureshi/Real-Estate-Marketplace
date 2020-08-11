@@ -3,7 +3,7 @@
 The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product. 
 
 
-Deployment
+# Deployment
 ![deployment-1](https://user-images.githubusercontent.com/17296281/89957937-9e43b600-dc30-11ea-8742-67ef66469305.png)
 ![deployment-2](https://user-images.githubusercontent.com/17296281/89957941-9f74e300-dc30-11ea-88e2-48e7d12780c9.png)
 
