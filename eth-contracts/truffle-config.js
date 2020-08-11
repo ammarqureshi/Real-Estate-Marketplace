@@ -22,7 +22,7 @@ const HDWalletProvider = require('truffle-hdwallet-provider');
 // const infuraKey = "fj4jll3k.....";
 //
 const fs = require('fs');
-const mnemonic = 'more pink among attend smoke emotion slim finger copper clog cactus stage';
+const mnemonic = '';
 
 module.exports = {
   /**
