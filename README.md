@@ -17,7 +17,7 @@ https://rinkeby.opensea.io/assets/genesis-real-estate-v2
  
  
  ``
- [
+  "abi": [
     {
       "constant": true,
       "inputs": [
@@ -216,25 +216,6 @@ https://rinkeby.opensea.io/assets/genesis-real-estate-v2
       "type": "function"
     },
     {
-      "constant": true,
-      "inputs": [
-        {
-          "name": "tokenId",
-          "type": "uint256"
-        }
-      ],
-      "name": "getTokenURI",
-      "outputs": [
-        {
-          "name": "",
-          "type": "string"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
       "constant": false,
       "inputs": [
         {
@@ -410,8 +391,27 @@ https://rinkeby.opensea.io/assets/genesis-real-estate-v2
     },
     {
       "constant": true,
+      "inputs": [
+        {
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "tokenURI",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
       "inputs": [],
-      "name": "getBaseTokenURI",
+      "name": "baseTokenURI",
       "outputs": [
         {
           "name": "",
