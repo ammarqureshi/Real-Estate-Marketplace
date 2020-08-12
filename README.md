@@ -25,7 +25,7 @@ View listing on opensea: https://rinkeby.opensea.io/assets/genesis-real-estate-v
  
  * SolnSquareVerifier: 0x665B98A1eBc909A403Ad82172e6669b06B65a757 - https://rinkeby.etherscan.io/address/0x665B98A1eBc909A403Ad82172e6669b06B65a757
  
- ![deployment](https://user-images.githubusercontent.com/17296281/89965837-ae19c500-dc45-11ea-8cf5-84297513b8f9.png)
+![deployment](https://user-images.githubusercontent.com/17296281/89966242-a0187400-dc46-11ea-91a9-416ce6446230.png)
  
  ``
   "abi": [
