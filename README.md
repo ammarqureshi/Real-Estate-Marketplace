@@ -11,8 +11,11 @@ The capstone will build upon the knowledge you have gained in the course in orde
  * Migrations: 0xfEc45188e047ddDB636251eE90fd569F9E0e831A
  
  * Verifier: 0x1Ddc471B7715cF2690bba037A0c4EB3Af28956C9: https://rinkeby.etherscan.io/address/0x1ddc471b7715cf2690bba037a0c4eb3af28956c9
+ 0x2Cf2E9B29AaD698F93662Fe3a77831355AE5bBE5
  
  * SolnSquareVerifier: 0x032996348838aAf3b4Df4fB79a09acB0a4427d56: https://rinkeby.etherscan.io/address/0x032996348838aAf3b4Df4fB79a09acB0a4427d56
+ 0x0bf5427f15E43C96B10a5970Fe425Fa47a1fc11C - https://rinkeby.etherscan.io/address/0x0bf5427f15E43C96B10a5970Fe425Fa47a1fc11C
+ 
  
 # Project Resources
 
