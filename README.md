@@ -2,9 +2,9 @@
 
 The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product. 
 
-Truffle: v5.1.21
-Node: v11.7.0
-npm: 6.5.0
+* Truffle: v5.1.21
+* Node: v11.7.0
+* npm: 6.5.0
 
 View listing on opensea: https://rinkeby.opensea.io/assets/genesis-real-estate-v2
 
