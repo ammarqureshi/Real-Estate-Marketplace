@@ -8,14 +8,14 @@ The capstone will build upon the knowledge you have gained in the course in orde
 
 View listing on opensea: https://rinkeby.opensea.io/assets/genesis-real-estate-v2
 
-# Development
+## Development
 1. ``npm i ``
 2. ``truffle develop``
 3. ``compile``
 4. ``test``
 
 
-# Deployment
+## Deployment
 
 ``npm migrate --reset all --network rinkeby``
 
@@ -26,9 +26,10 @@ View listing on opensea: https://rinkeby.opensea.io/assets/genesis-real-estate-v
  * SolnSquareVerifier: 0x665B98A1eBc909A403Ad82172e6669b06B65a757 - https://rinkeby.etherscan.io/address/0x665B98A1eBc909A403Ad82172e6669b06B65a757
  
 ![deployment](https://user-images.githubusercontent.com/17296281/89966242-a0187400-dc46-11ea-91a9-416ce6446230.png)
- 
+
+## Contract ABI
  ``
-  "abi": [
+ [
     {
       "constant": true,
       "inputs": [
